@@ -45,5 +45,5 @@ public class theEqualsMethod {
 
 	System.out.println(myLastName == anotherLastName);
 	//Outputs false
-	}
+}  
 }
