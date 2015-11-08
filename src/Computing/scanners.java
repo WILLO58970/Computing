@@ -13,7 +13,8 @@ public class scanners {
 		Scanner s= new Scanner(System.in);
 		System.out.println("What animal are you?");
 		animal=s.nextLine(); // input captured and stored in age
-	
+		s.close();
+		
 		if (animal.equals("Dog")){
 			avelife = 13;
 			maxlife = 30;
@@ -43,15 +44,9 @@ public class scanners {
 		}
 		}while(true);
 		
-		
-		
-		
-		
-		Scanner sc= new Scanner(System.in);
-		System.out.println("What is your age?");
 		age1=sc.nextLine(); // input captured and stored in age
 		age = Integer.parseInt(age1);
-		
+	
 		life = avelife - age;
 		
 		if (age>=18)
