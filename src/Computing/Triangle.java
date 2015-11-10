@@ -9,12 +9,12 @@ public class Triangle {
 		int numlines = 1;
 		int maxcount = 1;
 		Scanner s= new Scanner(System.in);
+		System.out.println("How many lines of Floyd’s triangle do you want?");
 		numlines=s.nextInt(); 
 		for(int i=0; i<numlines; i++){
-			
 			for(int j=0;j<maxcount; j++){
 				count++;
-				System.out.print(count);
+				System.out.print(count + " ");
 			}
 			maxcount++;
 			System.out.println();

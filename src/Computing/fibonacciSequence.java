@@ -12,7 +12,7 @@ public class fibonacciSequence {
 		Scanner s= new Scanner(System.in);
 		System.out.println("How many numbers in the Fibinacce Sequence do you want");
 		maxcount=s.nextInt(); 
-		
+		s.close();
 		for(int currentcount = 0; maxcount > currentcount; currentcount++){
 			result = first + last;
 			first = last;
