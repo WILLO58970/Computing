@@ -43,7 +43,8 @@ public class scanners {
 			System.out.println("Why u lyin for?");
 		}
 		}while(true);
-		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("");
 		age1=sc.nextLine(); // input captured and stored in age
 		age = Integer.parseInt(age1);
 	
