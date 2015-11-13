@@ -17,17 +17,19 @@ public class armstrongNumbers {
 		int[] vars = new int[num];
 		
 		for(int i = 0; i < num; i++) {
-		  if(i==0){
-			  System.out.println("Enter First Number");
-		  }
-		  else{
-			  System.out.println("Enter next Number:");
-		  }
-		  vars[i] = sc.nextInt();
+		System.out.println("Enter next Digit:");
+		vars[i] = sc.nextInt();
 		  
-		  result = (int) (result + Math.pow(vars[i], power));
-		String word = Integer.toString(vars[i]);
-		System.out.println(word);
+		result = (int) (result + Math.pow(vars[i], power));
+		String word = Integer.toString(result);
+		String b = String.valueOf(vars[i]);
+		String c = b + String.valueOf(vars[i]);
+		if(i==word.length() && word==b){
+			System.out.println("is an armstrong" + vars[i]);
+		}
+		else{
+			System.out.println("nah bruv" + b);
+		}
 		}
 		sc.close();
 		
