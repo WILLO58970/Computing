@@ -1,6 +1,5 @@
 package Computing;
-import java.math.*;
-import java.io.*;
+
 import java.util.*;
 
 public class armstrongNumbers {

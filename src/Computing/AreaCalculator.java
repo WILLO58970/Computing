@@ -5,7 +5,6 @@ public class AreaCalculator {
 		private float height = 0;
 		private float width = 0;
 		private float radius = 0;
-		private float area = 0;
 		
 		
 		public calculator(){

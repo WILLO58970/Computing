@@ -27,7 +27,7 @@ public class theEqualsMethod {
 	System.out.println(greeting.substring(0,3));
 	
 	String longPhraseOne = "floxinoxinihilipilification";
-	System.out.println();
+	System.out.println(longPhraseOne);
 	String myFirstName = "Will";
 	String myLastName = "Otty";
 	String myFullName = (firstName + " " + lastName);

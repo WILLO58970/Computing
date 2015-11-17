@@ -11,6 +11,7 @@ public class pets {
 		numPets=s.nextInt(); 
 		String petStatus = (numPets < 4) ? "Within Limit": "Wxceeded Limit";
 		System.out.println("the pet status is : " + petStatus);
+		s.close();
 	}
 
 }

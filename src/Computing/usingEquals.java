@@ -13,6 +13,9 @@ public class usingEquals {
 			System.out.println("Does The First Phrase equal the Second? ");
 			System.out.println(longPhraseOne==(longPhraseTwo));
 			System.out.println();
+			System.out.println("Does The First Phrase equal the Second? ");
+			System.out.println(longPhraseOne==(longPhraseThree));
+			System.out.println();
 			System.out.println("Does The First Phrase equal the Forth? ");
 			System.out.println(longPhraseOne==(longPhraseFour));
 			System.out.println();
