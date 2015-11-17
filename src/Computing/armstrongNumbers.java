@@ -20,6 +20,7 @@ public class armstrongNumbers {
 		System.out.println("Enter next Digit:");
 		vars[i] = sc.nextInt();
 		
+		
 		result = (int) (result + Math.pow(vars[i], power));
 		String word = Integer.toString(result);
 		b += String.valueOf(vars[i]);
