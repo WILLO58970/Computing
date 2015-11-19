@@ -2,7 +2,7 @@ package Computing;
 import java.util.Scanner;
 public class LinearSearch {
 static int[] a={1,3,5,2,4,6};
-public static boolean LinearSearch(int[]a,int searchValue){
+public static boolean linearSearch(int[]a,int searchValue){
 	for(int i = 0;i<a.length;i++){
 	if(a[i]==searchValue){
 		return true;
@@ -15,8 +15,7 @@ public static boolean LinearSearch(int[]a,int searchValue){
 		System.out.print("Enter number that may be in array: ");
 		int y = sc.nextInt();
 		sc.close();
-		System.out.println(LinearSearch(a,y)?"Value found": "Not there");
-
+		System.out.println(linearSearch(a,y)?"Value found": "Not there");
 	}
 
 }
