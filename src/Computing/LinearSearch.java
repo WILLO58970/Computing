@@ -1,8 +1,12 @@
 package Computing;
+
 import java.util.Scanner;
+
 public class LinearSearch {
+	
 static int[] a={1,3,5,2,4,6};
 public static boolean linearSearch(int[]a,int searchValue){
+
 	for(int i = 0;i<a.length;i++){
 	if(a[i]==searchValue){
 		return true;
