@@ -8,20 +8,18 @@ public class Stack {
 	 static Random rand = new Random();
 	
 public static void main(String[] args) {
-	a[9] = 0;
-	int top;
-	int temp = 0;
 			Scanner sc = new Scanner(System.in);
-			System.out.print("Enter length of array you want");
+			System.out.print("Enter length of array you want ");
 			int c = sc.nextInt();
 			
 		    a = new int[c];
 		    for(int i=0;i<a.length;i++){
 		    	int randomNum = (int)rand.nextInt(100-0);
-		        a[i] = randomNum ;
+		        a[i] = randomNum;
+		        System.out.print(a[i] + ", ");
+		       
 		    }
-		    for(int i = 0;i<a.length;i++)
-
-		
+		    
+		    
 	}
 }
