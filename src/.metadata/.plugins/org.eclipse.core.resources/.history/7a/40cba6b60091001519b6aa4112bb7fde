@@ -15,7 +15,7 @@ public class Queue {
 		nItems=0;
 	}
 	public void insert(long j){
-		String r= rear == max-1? "Queue full" : addItem(j);
+		String r= rear == max-1 ? "Queue full" : addItem(j);
 	}
 	public void addItem(long j){
 		a[++tail]=j;
@@ -25,5 +25,6 @@ public class Queue {
 	public void remove(){
 		String r= tail ==-1?"Empty Queue": removeItem();
 		System.out.println(r);
+		for(int i= ;)
 	}
 }
