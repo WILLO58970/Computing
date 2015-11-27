@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		    	int randomNum = (int)rand.nextInt(100-0);
 		        a[i] = randomNum;
 		        System.out.print(a[i] + ", ");
-		       
+		       sc.close();
 		    }
 		    
 		    
