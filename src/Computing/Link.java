@@ -10,7 +10,7 @@ public class Link {
 	private Link nextLink = null;
 	
 	public Link(String name,int age,String favBand,boolean inARelationship){
-		this.name=Name;
+		this.name=name;
 		this.age=age;
 		this.favBand=favBand;
 		this.inARelationship = inARelationship;
@@ -39,12 +39,6 @@ public class Link {
 	}
 	public void setInARelationship(boolean inARelationship) {
 		this.inARelationship = inARelationship;
-	}
-	public Link getNextLink() {
-		return nextLink;
-	}
-	public void setNextLink(Link nextLink) {
-		this.nextLink = nextLink;
 	}
 	public Link getNextLink(){
 		return nextLink;
