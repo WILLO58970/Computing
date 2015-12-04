@@ -1,4 +1,5 @@
 package Computing;
+
 import java.util.*;
 interface Animal{
 	
@@ -8,7 +9,7 @@ interface Animal{
 	void mate(boolean mate);
 }
 
-public class Interfaces implements Animal{
+public class animal implements Animal{
 	
 	String[]a = {"KFC","Apples", "Bananas","Bone"};
 	
@@ -42,9 +43,12 @@ public class Interfaces implements Animal{
 		System.out.println(mate);
 		
 	}
+	public void name() {
+		
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		Interfaces Dog = new Interfaces();
+		animal Dog = new animal();
 		System.out.println("*******Dog*******");
 		System.out.println("Enter Fav food");
 		String food = sc.nextLine();
@@ -52,7 +56,7 @@ public class Interfaces implements Animal{
 		int age = sc.nextInt();
 		Dog.eat(food);
 		Dog.age(age);
-		
+		sc.close();
 	    
 		
 		
