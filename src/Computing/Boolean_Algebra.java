@@ -1,11 +1,9 @@
-package booleanAlgebra;
-
+package Computing;
 import java.util.Scanner;
 
 public class LogicGates {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-
 		while(true){
 			System.out.println("Enter gate you want to see truth table of");
 			String gate = sc.nextLine().toUpperCase();
@@ -98,7 +96,6 @@ public class LogicGates {
 			return true;
 		}
 		return false;
-
 	}
 	public static boolean XOR(boolean a,boolean b){
 		if(a==!b){
@@ -113,7 +110,6 @@ public class LogicGates {
 		return false;
 	}
 	public static String count(String i){
-
 		if(i.equals("00")){
 			return "01";
 		}else if(i.equals("01")){
