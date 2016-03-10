@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class ReactionTime {
 	static long quickest;
+	
 	public static void main(String[] args) throws InterruptedException {	
+		Scanner sc = new Scanner(System.in);
+		long []a =  {976567,34,7,5,5677,5567,7,56,7677,67867};
 		while(true){
 			System.out.println("Enter to start");
-			Scanner sc = new Scanner(System.in);
 			sc.nextLine();
 			Thread.sleep((long)(Math.random() * 3000 + 3000));
 			long start = System.currentTimeMillis();
@@ -23,6 +25,14 @@ public class ReactionTime {
 			}else{
 				System.out.println("You didnt beat your time, you were " + (finale-quickest) + "ms slower.");
 			}
+			//top 10
+			
+			long low = 0;
+			long high = a.length - 1;
+	 
+			a = quickSort(a, low, high);
+			
+			
 			System.out.println("Do you want to start again [y/n]");
 			String again = sc.nextLine();
 			
@@ -31,5 +41,38 @@ public class ReactionTime {
 				return;
 			}
 		}
+	}
+	public static void quickSort(long[] a, long low, long high) {
+		if (a == null || a.length == 0)
+			return;
+		if (low >= high)
+			return;
+
+		int middle = (int)(low + (high - low) / 2);
+		long pivot = a[middle];
+
+		int i = (int)low, j = (int)high;
+		while (i <= j) {
+			while (a[i] < pivot) {
+				i++;
+			}
+ 
+			while (a[j] > pivot) {
+				j--;
+			}
+ 
+			if (i <= j) {
+				long temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+				i++;
+				j--;
+			}
+		}
+		if (low < j)
+			quickSort(a, low, j);
+ 
+		if (high > i)
+			quickSort(a, i, high);
 	}
 }
