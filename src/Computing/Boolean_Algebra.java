@@ -1,13 +1,14 @@
 package Computing;
 import java.util.Scanner;
 
-public class LogicGates {
+public class Boolean_Algebra {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
 		while(true){
 			System.out.println("Enter gate you want to see truth table of");
 			String gate = sc.nextLine().toUpperCase();
 			String i = "";
+			String result = "";
 			System.out.println("| A | B | R |");
 			switch(gate){
 			case "OR" :	
@@ -40,7 +41,6 @@ public class LogicGates {
 				while(!(i.equals("10"))){
 					i = count(i);
 					String aS = i.substring(0,1);
-					String bS = i.substring(1,2);
 					result = NOT(aS.equals("1")) ? "1" : "0";
 					System.out.println("| " + aS + " | " + result + " |");
 				}
@@ -119,3 +119,4 @@ public class LogicGates {
 		}
 		return "00";
 	}
+}

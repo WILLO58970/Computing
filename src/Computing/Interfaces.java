@@ -1,6 +1,6 @@
 package Computing;
 import java.util.*;
-interface Animal{
+interface Animal2{
 	
 	void eat(String food);
 	void sleep(int hrsSleep);
@@ -8,7 +8,7 @@ interface Animal{
 	void mate(boolean mate);
 }
 
-public class Interfaces implements Animal{
+public class Interfaces implements Animal2{
 	
 	String[]a = {"KFC","Apples", "Bananas","Bone"};
 	
@@ -52,6 +52,7 @@ public class Interfaces implements Animal{
 		int age = sc.nextInt();
 		Dog.eat(food);
 		Dog.age(age);
+		sc.close();
 		
 	    
 		

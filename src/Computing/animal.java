@@ -1,7 +1,7 @@
 package Computing;
 
 import java.util.*;
-interface Animal{
+interface Animal1{
 	
 	void eat(String food);
 	void sleep(int hrsSleep);
@@ -9,7 +9,7 @@ interface Animal{
 	void mate(boolean mate);
 }
 
-public class animal implements Animal{
+public class animal implements Animal1{
 	
 	String[]a = {"KFC","Apples", "Bananas","Bone"};
 	

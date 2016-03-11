@@ -30,7 +30,7 @@ public class ReactionTime {
 			long low = 0;
 			long high = a.length - 1;
 	 
-			a = quickSort(a, low, high);
+			quickSort(a, low, high);
 			
 			
 			System.out.println("Do you want to start again [y/n]");
